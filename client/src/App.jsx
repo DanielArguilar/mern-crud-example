@@ -7,7 +7,7 @@ const App = () => {
   const [userBtn, setUserBtn] = useState("Add user");
   const [userVariant, setUserVariant] = useState({ bool: true, id: "" });
   //  API URI's
-  const BASE_URL = "https://mern-crud-example-backend.onrender.com/api";
+  const BASE_URL = process.env.baseURL;
   const getUsers = `${BASE_URL}/users`;
   const postUser = `${BASE_URL}/addUser`;
 
