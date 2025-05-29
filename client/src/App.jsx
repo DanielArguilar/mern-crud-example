@@ -7,7 +7,7 @@ const App = () => {
   const [userBtn, setUserBtn] = useState("Add user");
   const [userVariant, setUserVariant] = useState({ bool: true, id: "" });
   //  API URI's
-  const BASE_URL = import.meta.env.baseURL;
+  const BASE_URL = import.meta.env.VITE_baseURL;
   console.log(BASE_URL);
   const getUsers = `${BASE_URL}/users`;
   const postUser = `${BASE_URL}/addUser`;
